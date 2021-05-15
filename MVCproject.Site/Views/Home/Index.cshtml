@@ -1,0 +1,21 @@
+﻿@model IEnumerable<MVCproject.Data.Models.Heladeria>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo</title>
+</head>
+<body>
+
+    <h1>Heladeria</h1>
+
+    <p>Total: @Model.Count()</p>
+
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@item.Nombre</li>
+        }
+    </ul>
+
+</body>
+</html>
